@@ -1,14 +1,24 @@
-# Tropicosa
+# TROPICOSA
 La Tropicosa S.A. de C.V. es una empresa de venta de discos de acetato que ahora busca innovar entrando en la distribución de música en formato de cassettes. Como principal requisito, La Tropicosa necesita sistema en el cual se pueda capturar, editar, eliminar y mostrar los cassettes que tiene disponibles.
 
-# INSTALACION
+# Instalacion
 
-### REQUERIMIENTOS
+### Requerimientos
+- [Ruby 2.3.3](https://rubyinstaller.org/downloads/)
+- [Rails Installer 3.2.1](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.1.exe)
+- [Node.js](https://nodejs.org/en/download/)
 
+### Proceso
 
-### PROCESO
+Clonar el Repositorio
+*https://github.com/EduardoCibernetica/Tropicosa.git*
+```
+cd Tropicosa
+bundle install
+rails server
+```
 
-# FUNCIONAMINETO
+# Funcionamiento
 Contexto
 Entidades: Cassettes
 Campos: ID, Título, Artista, Año, Disquera, Precio
@@ -16,7 +26,7 @@ Campos: ID, Título, Artista, Año, Disquera, Precio
 Como principal requisito, La Tropicosa necesita sistema en el cual se pueda capturar, editar, eliminar y mostrar los cassettes que tiene disponibles.
 
 ## Preguntas
-1. Describe el flujo y las herramientas que usarías para el despliegue (deployment) de las aplicaciones.
+#### 1. Describe el flujo y las herramientas que usarías para el despliegue (deployment) de las aplicaciones.
 
 Herramientas:  Ruby on Rails es un framework de aplicaciones web de código abierto escrito en el lenguaje de programación Ruby  siguiendo el paradigma del patrón Modelo Vista Controlador (MVC).
 
@@ -63,8 +73,13 @@ CREATE TABLE IF NOT EXISTS 'cassettes' (
 **Para fines practicos se usara la que biene por defecto que es sqlite3**
 
 
+#### 2. ¿Que tipo de pruebas aplicarías a las aplicaciones? y ¿Qué tecnologías usarías para probar?
 
-2. ¿Que tipo de pruebas aplicarías a las aplicaciones? y ¿Qué tecnologías usarías para probar?
+De forma general, aplicaría pruebas unitarias para verificar que cada uno de los módulos está funcionando correctamente ya que es una forma de comprobar el correcto funcionamiento de una unidad de código. Esto sirve para asegurar que cada unidad funcione correctamente y eficientemente por separado.
+
+Haría pruebas para validadores para los campos que son requeridos en el caso de que fuera una aplicación usada por usuarios, verificará que un usuario no pueda modificar información que no le pertenece, como por ejemplo en caso de los cassetess en el campo precio que es un float, validar que efectivamente solo acepte este tipo de valores
+
+En cuanto a las tecnologías que usaría para probar seria **Selenium** ya que es un es un entorno de pruebas de software para aplicaciones basadas en la web.
 
 
 # Ejemplos de Funcionalidad
