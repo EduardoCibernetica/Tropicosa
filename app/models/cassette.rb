@@ -1,0 +1,2 @@
+class Cassette < ApplicationRecord
+end

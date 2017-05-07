@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @cassette.Titulo %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @cassette.Autor %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @cassette.Ano %>
+</p>
+
+<p>
+  <strong>Disquetera:</strong>
+  <%= @cassette.Disquetera %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @cassette.Precio %>
+</p>
+
+<%= link_to 'Editar', edit_cassette_path(@cassette) %> |
+<%= link_to 'Regresar', cassettes_path %>
