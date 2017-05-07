@@ -28,10 +28,10 @@ class CassettesController < ApplicationController
 
     respond_to do |format|
       if @cassette.save
-        format.html { redirect_to @cassette, notice: 'Cassette was successfully created.' }
+       #format.html { redirect_to @cassette, notice: 'Cassette was successfully created.' }
         format.json { render :show, status: :created, location: @cassette }
       else
-        format.html { render :new }
+        #format.html { render :new }
         format.json { render json: @cassette.errors, status: :unprocessable_entity }
       end
     end
@@ -42,10 +42,10 @@ class CassettesController < ApplicationController
   def update
     respond_to do |format|
       if @cassette.update(cassette_params)
-        format.html { redirect_to @cassette, notice: 'Cassette was successfully updated.' }
+        #format.html { redirect_to @cassette, notice: 'Cassette was successfully updated.' }
         format.json { render :show, status: :ok, location: @cassette }
       else
-        format.html { render :edit }
+        #format.html { render :edit }
         format.json { render json: @cassette.errors, status: :unprocessable_entity }
       end
     end
@@ -56,7 +56,7 @@ class CassettesController < ApplicationController
   def destroy
     @cassette.destroy
     respond_to do |format|
-      format.html { redirect_to cassettes_url, notice: 'Cassette was successfully destroyed.' }
+      #format.html { redirect_to cassettes_url, notice: 'Cassette was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
