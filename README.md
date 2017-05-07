@@ -83,3 +83,11 @@ En cuanto a las tecnologías que usaría para probar seria **Selenium** ya que e
 
 
 # Ejemplos de Funcionalidad
+
+**http://localhost:3000/cassettes/1.json**
+
+![](/Imagenes_Pruebas/00.jpg)
+
+**http://localhost:3000/cassettes/2.json**
+
+![](/Imagenes_Pruebas/01.jpg)
