@@ -1,21 +1,21 @@
 # Tropicosa
 La Tropicosa S.A. de C.V. es una empresa de venta de discos de acetato que ahora busca innovar entrando en la distribución de música en formato de cassettes. Como principal requisito, La Tropicosa necesita sistema en el cual se pueda capturar, editar, eliminar y mostrar los cassettes que tiene disponibles.
 
-#INSTALACION
+# INSTALACION
 
-###REQUERIMIENTOS
+### REQUERIMIENTOS
 
 
-###PROCESO
+### PROCESO
 
-#FUNCIONAMINETO
+# FUNCIONAMINETO
 Contexto
 Entidades: Cassettes
 Campos: ID, Título, Artista, Año, Disquera, Precio
 
 Como principal requisito, La Tropicosa necesita sistema en el cual se pueda capturar, editar, eliminar y mostrar los cassettes que tiene disponibles.
 
-##Preguntas
+## Preguntas
 1. Describe el flujo y las herramientas que usarías para el despliegue (deployment) de las aplicaciones.
 
 Herramientas:  Ruby on Rails es un framework de aplicaciones web de código abierto escrito en el lenguaje de programación Ruby  siguiendo el paradigma del patrón Modelo Vista Controlador (MVC).
@@ -67,4 +67,4 @@ CREATE TABLE IF NOT EXISTS 'cassettes' (
 2. ¿Que tipo de pruebas aplicarías a las aplicaciones? y ¿Qué tecnologías usarías para probar?
 
 
-#Ejemplos de Funcionalidad
+# Ejemplos de Funcionalidad
