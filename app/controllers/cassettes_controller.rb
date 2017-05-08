@@ -10,6 +10,7 @@ class CassettesController < ApplicationController
   # GET /cassettes/1
   # GET /cassettes/1.json
   def show
+    @cassettes = Cassette.all
   end
 
   # GET /cassettes/new

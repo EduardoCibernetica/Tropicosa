@@ -84,6 +84,22 @@ En cuanto a las tecnologías que usaría para probar seria **Selenium** ya que e
 
 # Ejemplos de Funcionalidad
 
+Ruby on rails tiene soporte ajson echemos un vistaso en app/controllers/cassettes_controller.rb
+```
+  # GET /cassettes/1
+  # GET /cassettes/1.json
+  def show
+    @cassettes = Cassette.all
+  end
+
+  # GET /cassettes/new
+  def new
+    @cassette = Cassette.new
+  end
+
+  ``` 
+
+
 **http://localhost:3000/cassettes/1.json**
 
 ![](/Imagenes_Pruebas/00.jpg)
@@ -91,3 +107,35 @@ En cuanto a las tecnologías que usaría para probar seria **Selenium** ya que e
 **http://localhost:3000/cassettes/2.json**
 
 ![](/Imagenes_Pruebas/01.jpg)
+
+
+### UPDATE y DELETE
+
+```
+  # PATCH/PUT /cassettes/1
+  # PATCH/PUT /cassettes/1.json
+  def update
+    respond_to do |format|
+      if @cassette.update(cassette_params)
+        format.html { redirect_to @cassette, notice: 'Cassette fue Actualizado.' }
+        format.json { render :show, status: :ok, location: @cassette }
+      else
+        format.html { render :edit }
+        format.json { render json: @cassette.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+
+  # DELETE /cassettes/1
+  # DELETE /cassettes/1.json
+  def destroy
+    @cassette.destroy
+    respond_to do |format|
+      format.html { redirect_to cassettes_url, notice: 'Cassette was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+
+```
